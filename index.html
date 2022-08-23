@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container mt-5">
+    <div class="row ">
+        <div class="col-3 text-white">
+          <div class="card bg" style="width: 13rem;">
+            <img src="img/product-1.png" class="img-fluid w-100" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mobile sumsang 1</h5>
+              <p class="card-text">price$ <span>110</span></p>
+              <div>
+                <button type="button" class="btn btn-success" onclick="addToCard(this)">Buy Now</button>
+            </div>
+            </div>
+          </div>
+      </div>
+        <div class="col-3 text-white">
+          <div class="card bg" style="width: 13rem;">
+            <img src="img/product-1.png" class="img-fluid w-100" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mobile sumsang 2</h5>
+              <p class="card-text">price$ <span>210</span></p>
+              <div>
+                <button type="button" class="btn btn-success" onclick="addToCard(this)">Buy Now</button>
+            </div>
+            </div>
+          </div>
+      </div>
+        <div class="col-6 text-white">
+          <div class=" fs-6 mt-5 w-100 tbg color ">
+            <p class="text-center">Total added product <span class="text-bg-dark" id="total-product">0</span></p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="row">scr</th>
+                  <td>Name</td>
+                  <td>Price</td>
+                </tr>
+              </thead>
+              <tbody id="card-product">
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          </div>
+      </div>
+    </div>
+    </div>
+    
+  <script src="shoping.js"></script>
+</body>
+
+</html>
